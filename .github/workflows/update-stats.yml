@@ -2,7 +2,7 @@ name: TLD Stats Update
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Every day at 6:00 AM BDT (00:00 UTC)
+    - cron: '0 0,12 * * *' # Twice a day at 00:00 and 12:00 UTC (6:00 AM and 6:00 PM BDT)
   workflow_dispatch:
 
 permissions:
